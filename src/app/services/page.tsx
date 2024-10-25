@@ -1,16 +1,14 @@
 import React from 'react';
-import Header from '../component/Header/header';
-import FooterPage from '../component/Footer/footer';
-import Hero from '../component/Hero/hero';
+import Link from 'next/link';
 
 const Servicepage = () => (
   <div>
-    <Header/>
     <h1>Services</h1>
+    <ul>
+      <li><Link href="/services/app-development">App Development</Link></li>
+      <li><Link href="/services/web-development">Web Development</Link></li>
+    </ul>
     
-    <Hero/>
-
-    <FooterPage/>
   </div>
 );
 
